@@ -1,0 +1,956 @@
+ 
+
+ GitHub Android App 
+ 
+
+https://play.google.com/store/apps/details?id=com.github.mobile
+ — Edit 
+
+
+
+
+
+
+
+
+
+  2,634  commits 
+  14  branches 
+  19  releases 
+  91  contributors 
+
+ Java 50.1%  
+ JavaScript 49.6%  
+ Other 0.3%  
+
+Java JavaScript Other 
+
+
+
+ Quickly jump between files  Compare, review, create a pull request 
+ branch: master  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+android/ 
+
+
+  Create a new file here 
+
+This branch is 7 commits ahead, 82 commits behind forkhubs:master 
+ Pull Request  
+  Compare  
+ 
+
+Create ZZEETTEEZZPARKZ.POINT_ll_pixel.gap.ground.SEWERSYSTEM.SANTAFEDAM. 
+
+Copy SHA latest commit b13bbedb37 
+@calimichoacano calimichoacano authored just now 
+
+ 
+  
+   .idea  Colors moved to XML   3 months ago  
+   COPYRIGHT-c-1983ADRIAN.OROZCO.JIMENEZ.ACOSTA.GAMEZ-C  Create CONNECT_SATELLITES   a month ago  
+   app  Swedish translation fix   2 months ago  
+   gradle/wrapper  Add Gradle support   5 months ago  
+   integration-tests  -Moved form action bars to toolbars (Needed for navigation drawer to …   4 months ago  
+   .gitattributes  Add the .gitattributes file   3 months ago  
+   .gitignore  -Fixed unintentional removal of .gitignore and .travis.yml   4 months ago  
+   .travis.yml  -Fixed unintentional removal of .gitignore and .travis.yml   4 months ago  
+   LICENSE  Add license to the top level directory.   11 months ago  
+   README.md  Update README to remove ABS mention   4 months ago  
+   RSSfeederZZEETTEEZZolaR  Create RSSfeederZZEETTEEZZolaR   12 days ago  
+   ZZEETTEEZZPARKZ.POINT_ll_pixel.gap.ground.SEWERSYSTEM.SANTAFEDAM.  Create ZZEETTEEZZPARKZ.POINT_ll_pixel.gap.ground.SEWERSYSTEM.SANTAFEDAM.   just now  
+   ZhuntZ  Create ZhuntZ   11 days ago  
+   ZssA_EFFbOOtT.ZZEETTEEZZyz.  xlive.dll   26 days ago  
+   build.gradle  Update the GitHub Java API library to v3.7.0.201502260915-r   2 months ago  
+   default.properties  Upgrade target to 16 in default properties file at root   3 years ago  
+   gradle.properties  Add Gradle support   5 months ago  
+   gradlew  Add Gradle support   5 months ago  
+   gradlew.bat  Adjust line ending   3 months ago  
+   pom.xml  Update android-maven-plugin to 3.8.2   5 months ago  
+   proguard.cfg  Whitespace normalization.   2 years ago  
+   settings.gradle  Add Gradle support   5 months ago  
+
+
+ README.md 
+
+GitHub Android App Google Play Build Status 
+
+This repository contains the source code for the GitHub Android app.
+
+Download from Google Play
+
+Please see the issues section to report any bugs or feature requests and to see the list of known issues.
+
+License
+•Apache Version 2.0
+
+Building
+
+With Gradle
+
+The easiest way to build is to install Android Studio v1.+ with Gradle v2.2.1. Once installed, then you can import the project into Android Studio:
+1.Open  File  
+2.Import Project
+3.Select  build.gradle  under the project directory
+4.Click  OK  
+
+Then, Gradle will do everything for you.
+
+With Maven
+
+Notes: Although Maven support is not dropped as yet, to say the least, we have shifted our focus to use Gradle as our main build system.
+
+The build requires Maven v3.1.1+ and the Android SDK to be installed in your development environment. In addition you'll need to set the  ANDROID_HOME  environment variable to the location of your SDK:
+
+export ANDROID_HOME=/opt/tools/android-sdk
+
+After satisfying those requirements, the build is pretty simple:
+•Run  mvn clean package  from the  app  directory to build the APK only
+•Run  mvn clean install  from the root directory to build the app and also run the integration tests, this requires a connected Android device or running emulator
+
+You might find that your device doesn't let you install your build if you already have the version from Google Play installed. This is standard Android security as it it won't let you directly replace an app that's been signed with a different key. Manually uninstall GitHub from your device and you will then be able to install your own built version.
+
+See here for instructions on building from Eclipse.
+
+Acknowledgements
+
+This project uses the GitHub Java API built on top of API v3.
+
+It also uses many other open source libraries such as:
+•android-maven-plugin
+•CodeMirror
+•RoboGuice
+•ViewPagerIndicator
+
+These are just a few of the major dependencies, the entire list of dependencies is listed in the app's POM file.
+
+Contributing
+
+Please fork this repository and contribute back using pull requests.
+
+Any contributions, large or small, major features, bug fixes, additional language translations, unit/integration tests are welcomed and appreciated but will be thoroughly reviewed and discussed.
+Skip to content 
+
+
+  
+
+
+
+  
+This repository
+Explore
+Gist
+Blog
+Help
+@calimichoacano calimichoacano  
+  Create new...
+
+
+
+
+
+
+  You have unread notifications 
+ Settings
+
+
+
+  Sign out
+
+
+
+You don't have any verified emails. We recommend verifying at least one email. 
+
+Email verification helps our support team verify ownership if you lose account access and allows you to receive all the notifications you ask for. 
+
+
+
+
+
+
+
+
+
+  
+ Watch   0  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  Star  0  
+ Fork  3,070 
+
+
+Loading
+
+ calimichoacano/android  forked from forkhubs/android 
+  
+
+
+ Code  Code
+ Pull requests 1 Pull requests
+ Wiki  Wiki
+
+ Pulse  Pulse
+ Graphs  Graphs
+
+ Settings  Settings
+
+
+
+HTTPS clone URL
+
+ Copy to clipboard  
+
+
+
+
+Copy to clipboard
+
+
+
+
+Copy to clipboard
+
+You can clone with HTTPS, SSH, or Subversion.  Get help on which URL is right for you. 
+ Clone in Desktop   Download ZIP   
+ 
+
+ GitHub Android App 
+ 
+
+https://play.google.com/store/apps/details?id=com.github.mobile
+ — Edit 
+
+
+
+
+
+
+
+
+
+  2,634  commits 
+  14  branches 
+  19  releases 
+  91  contributors 
+
+ Java 50.1%  
+ JavaScript 49.6%  
+ Other 0.3%  
+
+Java JavaScript Other 
+
+
+
+ Quickly jump between files  Compare, review, create a pull request 
+ branch: master  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+android/ 
+
+
+  Create a new file here 
+
+This branch is 7 commits ahead, 82 commits behind forkhubs:master 
+ Pull Request  
+  Compare  
+ 
+
+Create ZZEETTEEZZPARKZ.POINT_ll_pixel.gap.ground.SEWERSYSTEM.SANTAFEDAM. 
+
+Copy SHA latest commit b13bbedb37 
+@calimichoacano calimichoacano authored 2 minutes ago 
+
+ 
+  
+   .idea  Colors moved to XML   3 months ago  
+   COPYRIGHT-c-1983ADRIAN.OROZCO.JIMENEZ.ACOSTA.GAMEZ-C  Create CONNECT_SATELLITES   a month ago  
+   app  Swedish translation fix   2 months ago  
+   gradle/wrapper  Add Gradle support   5 months ago  
+   integration-tests  -Moved form action bars to toolbars (Needed for navigation drawer to …   4 months ago  
+   .gitattributes  Add the .gitattributes file   3 months ago  
+   .gitignore  -Fixed unintentional removal of .gitignore and .travis.yml   4 months ago  
+   .travis.yml  -Fixed unintentional removal of .gitignore and .travis.yml   4 months ago  
+   LICENSE  Add license to the top level directory.   11 months ago  
+   README.md  Update README to remove ABS mention   4 months ago  
+   RSSfeederZZEETTEEZZolaR  Create RSSfeederZZEETTEEZZolaR   12 days ago  
+   ZZEETTEEZZPARKZ.POINT_ll_pixel.gap.ground.SEWERSYSTEM.SANTAFEDAM.  Create ZZEETTEEZZPARKZ.POINT_ll_pixel.gap.ground.SEWERSYSTEM.SANTAFEDAM.   2 minutes ago  
+   ZhuntZ  Create ZhuntZ   11 days ago  
+   ZssA_EFFbOOtT.ZZEETTEEZZyz.  xlive.dll   26 days ago  
+   build.gradle  Update the GitHub Java API library to v3.7.0.201502260915-r   2 months ago  
+   default.properties  Upgrade target to 16 in default properties file at root   3 years ago  
+   gradle.properties  Add Gradle support   5 months ago  
+   gradlew  Add Gradle support   5 months ago  
+   gradlew.bat  Adjust line ending   3 months ago  
+   pom.xml  Update android-maven-plugin to 3.8.2   5 months ago  
+   proguard.cfg  Whitespace normalization.   2 years ago  
+   settings.gradle  Add Gradle support   5 months ago  
+
+
+ README.md 
+
+GitHub Android App Google Play Build Status 
+
+This repository contains the source code for the GitHub Android app.
+
+Download from Google Play
+
+Please see the issues section to report any bugs or feature requests and to see the list of known issues.
+
+License
+•Apache Version 2.0
+
+Building
+
+With Gradle
+
+The easiest way to build is to install Android Studio v1.+ with Gradle v2.2.1. Once installed, then you can import the project into Android Studio:
+1.Open  File  
+2.Import Project
+3.Select  build.gradle  under the project directory
+4.Click  OK  
+
+Then, Gradle will do everything for you.
+
+With Maven
+
+Notes: Although Maven support is not dropped as yet, to say the least, we have shifted our focus to use Gradle as our main build system.
+
+The build requires Maven v3.1.1+ and the Android SDK to be installed in your development environment. In addition you'll need to set the  ANDROID_HOME  environment variable to the location of your SDK:
+
+export ANDROID_HOME=/opt/tools/android-sdk
+
+After satisfying those requirements, the build is pretty simple:
+•Run  mvn clean package  from the  app  directory to build the APK only
+•Run  mvn clean install  from the root directory to build the app and also run the integration tests, this requires a connected Android device or running emulator
+
+You might find that your device doesn't let you install your build if you already have the version from Google Play installed. This is standard Android security as it it won't let you directly replace an app that's been signed with a different key. Manually uninstall GitHub from your device and you will then be able to install your own built version.
+
+See here for instructions on building from Eclipse.
+
+Acknowledgements
+
+This project uses the GitHub Java API built on top of API v3.
+
+It also uses many other open source libraries such as:
+•android-maven-plugin
+•CodeMirror
+•RoboGuice
+•ViewPagerIndicator
+
+These are just a few of the major dependencies, the entire list of dependencies is listed in the app's POM file.
+
+Contributing
+
+Please fork this repository and contribute back using pull requests.
+
+Any contributions, large or small, major features, bug fixes, additional language translations, unit/integration tests are welcomed and appreciated but will be thoroughly reviewed and discussed.
+ 
+   
+
+Status
+ API
+ Training
+ Shop
+ Blog
+ About
+   © 2015 GitHub, Inc.
+ Terms
+ Privacy
+ Security
+ Contact
+ 
+
+
+
+
+
+Exit Zen ModeSwitch themes
+
+
+  
+
+
+
+
+
+
+ 
+
+
+  
+ 
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+About 51,600 results (0.50 seconds) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+Understanding the Global Positioning System
+
+
+
+The first GPS satellite was launched by the U.S. Air Force in early 1978. ... The radio signals travel at the speed of light (186,000 miles per second) and take ... Using P code on both frequencies, a military receiver can achieve better ... will be a civil‑controlled system that draws on both public and private sectors for funding.
+
+
+
+
+www.montana.edu/gps/understd.html
+
+ 
+
+
+.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+Radar Spectrum Regulatory Overview
+
+File Format: PDF/Adobe Acrobat
+
+
+
+Mar 8, 2013 ... ITU-R - Radiocommunication Sector - manages use of RF spectrum ... Established 1934 by Title 47 of the U.S. Code ... Various satellite services ... Military Multichannel Tactical Radio Relay ... Mixed use private sector. 2305- ...
+
+
+
+
+www.darpa.mil/workarea/downloadasset.aspx?id=2147486331
+
+ 
+
+
+.
+
+
+
+
+
+
+
+
+
+
+
+ 
+Open-source intelligence - Wikipedia, the free encyclopedia
+
+The availability of worldwide satellite photography, often of high resolution, on the ... Direct Support" and specifically for the DoD under Commercial Code M320 as ... the USA is the conflict between military, government, and the private sector as to how the ... In the private sector, competitive intelligence has become a tool for ...
+
+
+
+
+en.wikipedia.org/wiki/Open-source_intelligence
+
+ 
+
+
+.
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+SATELLITE 101: Satellite Technology and Services
+
+File Format: PDF/Adobe Acrobat
+
+
+
+Satellites deliver satellite television, radio and broadband services directly to consumers ... The U.S. military relies on the commercial satellite industry.
+
+
+
+
+www.sia.org/wp-content/uploads/.../SATELLITE_101_2011.pdf
+
+ 
+
+
+.
+
+
+
+
+
+
+
+
+
+
+
+ 
+telecommunications and information system history of alaska
+
+File Format: PDF/Adobe Acrobat
+
+
+
+to an expansion of the Army presence along the Yukon and in western ... to expand telegraph, telephone or radio service either by the Army or the private sector. ... 1945 radio teletype and high frequency communications, voice and morse code, ... The led to Alaska being incorporated in the Applied Technology Satellite 1 ...
+
+
+
+
+www.alaska.edu/.../ TELECOMMUNICATIONS%20AND%20INFORMATION%20SYS...
+
+ 
+
+
+.
+
+
+
+
+
+
+
+
+
+
+
+ 
+Broadcast media
+
+
+
+... list of country data codes · E: cross-reference list of hydrographic data codes .... British Indian Ocean Territory, Armed Forces Radio and Television Service ... and satellite subscription services; about a half dozen private radio stations (2007) .... public-sector TV presence with state-owned Danmarks Radio operating 4 ...
+
+
+
+
+https://www.cia.gov/Library/publications/the-world.../2213.html
+
+ 
+
+
+.
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+Hacking Satellites … Look Up to the Sky - InfoSec Institute
+
+
+
+Sep 18, 2013 ... The global satellite industry grew 7% in 2012; according to data ... Interacting – protocols and authentication used, radio transmissions need official license! .... The news created a lot of noise in the military, for it is normal to expect .... the satellite identification codes and the number of signals received, and ...
+
+
+
+
+resources.infosecinstitute.com/hacking-satellite-look-up-to-the-sky/
+
+ 
+
+
+.
+
+
+
+
+
+
+
+
+
+
+
+ 
+GPS_History-MR614.ap..
+
+File Format: PDF/Adobe Acrobat
+
+
+
+growing use in the military and civilian world, a chronology of important events ... satellites that broadcast very stable radio signals; several ground-based monitor stations to track the .... system should be—how many satellites, at what altitude, signal codes, and ..... With the proliferation of civil government and private-sector.
+
+
+
+
+www.cs.cmu.edu/~sensing-sensors/.../GPS_History-MR614.appb.pdf
+
+ 
+
+
+.
+
+
+
+
+
+
+
+
+
+
+
+ 
+Section 4 Outer Space and Security
+
+File Format: PDF/Adobe Acrobat
+
+
+
+and private sectors. In major countries also ... include image reconnaissance satellites reconnoitering military facilities and targets, satellites gathering radio wave information for military communications and radio wave gathering, ... have been under way recently for the creation of the “International Code of Conduct for Outer.
+
+
+
+
+www.globalsecurity.org/military/.../defense-of-japan2014_1-2-4_1st_0730. pdf
+
+ 
+
+
+.
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+Liftoff: Careers In Satellite, the World's First and Most Successful ...
+
+File Format: PDF/Adobe Acrobat
+
+
+
+The very idea of building a career in the satellite industry was a novel one almost thirty years ... from the Global Positioning via Satellite (GPS) system that the US Air Force put into orbit. .... vision and radio industries, telephone companies and Internet service providers, .... the private sector, where the comparable wage,.
+
+
+
+
+www.aem.umn.edu/teaching/...guide/Liftoff_Satellite_Careers.pdf
+
+ 
+
+
+.
+
+
+
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+
+
+powered by 
+ 
+Custom Search 
+..
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
