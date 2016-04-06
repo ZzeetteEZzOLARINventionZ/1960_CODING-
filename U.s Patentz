@@ -1,0 +1,47 @@
+
+
+ AGECRV  ARSTAN   ARSTANL   CASE  COF12K 
+ COFECHA  CRONOL  DOSXMSF  DOSXNT  DPL 
+ EARLAT  EDRM   EVENT  EXTRAP  FHCONV 
+ FMT   JOLTS  OLDCORE  OUTBREAK  PCA 
+ RECPC  RESPO  RMATSG  SAMDEP  SCATTER 
+ SCRPLT  SCRSAV  SIGLOF S  PANFIRE  SSA 
+ SSIZ  XTRLST  XTRMOD  YUX   
+
+COREM: Windows Remote Control for COFECHA
+
+Bernhard Knibbe (SCIEM) has created and is providing for free download a graphical interface for the popular quality-control computer program COFECHA. Simply fill in the settings as you would from the COFECHA Main Menu, run the program, and the output will open in a Windows text editor, such as Notepad or Wordpad. You will need teh latest version of COFECHA, however (6.06 or later, downloadable from above).
+CORINA: Crossdating Program from Cornell
+
+Corina is an open source, freely available, dendrochronology program used and developed by the Cornell Tree-Ring Laboratory. The main features of Corina include: Support for standard serial and USB measuring platforms; multiple cross dating measures including T-scores, Weiserjahre and Trend; standard dendro file format support including Tucson, Heidelberg and TSAP; and advanced graphing support. Corina is written in Java and so can be run on most operating systems include Windows, Mac OSX and Linux.
+
+ 
+ this is a new suite of programs written in R that perform similar functions to some of those in the Dendrochronology Program Library (DPL, see above). Source code is available, and scientists can download compressed files for either MAC or PC platforms. A comprehensive reference manual is also available for download as a PDF. More information on the dplR can be found in the journal Dendrochronologia LignoStation and LignoVision
+
+LignoStation is an "all in one system for surface preparation, high resolution assessment of tree-ring variables and wood density. The LignoStation follows a new concept: It produces high resolution digital scans, directly and automatically. The whole system is computer controlled. Thus you can focus on your scientific work, while the system does the routine work for you. Note: This product is developed in co-operation with the University of Freiburg, Germany and is in development."
+
+Details: (1) Density assessment by a high frequency probe (no x-ray source used); (2) Image resolution: <= 20 microns (=1/50 mm); (3) Optical scans with high-resolution camera; (4) Samples: increment cores or stem discs; and (5) Maximum measurement length: 500 mm 
+ Coupled with LignoStation is (1) LignoTrim: High resolution wood surface cutter; (2) LignoScan: High resolution, electromagnetic wood density scanner; (3) LignoScop: High resolution wood surface microscope-camera scanner; and (4) LignoVision. 
+
+LignoVision is software that represents a system for tree-ring scanning that works with any scanner and allows automatic tree-ring detection plus an easy manual editing function. Ring-width as well as early and latewood width can be separately stored. Besides surface scanning, it can also be used for analysis of x-ray images. The software also supports multiple image sources, such as optical scanner, CCD-camera, and x-ray scanner.
+
+ 
+
+Precon 5.1
+
+PRECON is software that statistically analyzes the relationship between climate and tree-ring variation ("PRECON": estimating climatic conditions that precondition ring widths). This software reads any tree-ring chronology in ITRDB format, then conducts a variety of statistical analyses (e.g., correlation and response function analyses) against monthly climatic factors. The program permits easy manipulation of data to test hypotheses about controlling environmental factors, climatic change, and possible growth effects attributed to environmental pollution. 
+ 
+
+WinDENDRO 
+
+"WinDENDRO is a semiautomatic image analysis system specifically designed for tree-ring measurement." This software and hardware package has seen increased use over the years, and has certain features that make it particularly appealing and well-worth considering for your research. The system works with a scanner rather than a video camera, and is tightly integrated with density analyses and stem analyses routines. The user has extensive control over the paths over which the software records measurements, and can even "train" the software to determine where the ring boundaries exist. This software also comes ready to operate across numerous Windows and Mac platforms. For technical questions, contact their Technical Support. For sales questions, contact their Sales Office.
+
+ 
+
+FHX2 and  FHAES: Fire History software
+
+FHX2 and its Windows version FHAES analyzes event chronologies such as those related to fire scars and other fire history studies as developed from tree-ring data. The software provides means for (1) entering and storing fire history data, (2) graphing and plotting these data, (3) statistically analyzing the fire history, and (4) analyzing the relationship between fire and climate. Statistical analyses include fire interval tests, seasonality summaries, and tests that detect changes in temporal or spatial aspects of fire regimes. The software is primarily known for its strong graphics capabilities
+TREERING 3.0
+
+TREERING 3.0 is a process model of the response of cambial activity and ring structure to daily climatic variations. The model provides calculations of water balance, photosynthesis, carbon storage, crown growth, and cambial activity, then provides graphical outputs showing the daily values of growth regulating processes (e.g., number of cells dividing, enlarging, and maturing) along with the resulting ring structure.
+forever(c)adrian.orozco.jimenez.acosta.gamez(c)
