@@ -1,0 +1,249 @@
+Enter file contents here
+
+
+
+
+
+
+ 
+
+
+
+Adobe	
+
+
+
+SUBSCRIBE
+  RSS
+  EMAIL
+ 
+AFTEREFFECTS
+
+News, Information & Workflows from Users & the Adobe Ae Team
+
+
+
+
+Region of Interest
+ Customer Focus
+ Character Animator
+ 
+
+ 
+
+
+
+
+Jul 20, 2012
+
+reducing flicker for stop-motion animation and time-lapse photography
+
+
+ 0 COMMENTS
+ By: Todd Kopriva 
+
+
+[Today’s post is by Benjamin Markus, who is working with us as an intern this summer.] 
+
+If you’ve ever tried your hand at stop-motion animation or time-lapse photography, chances are you’ve run into the common problem of inconsistent lighting or luminance variation between consecutive pictures taken on the same camera, with the same lens and settings. This issue is usually referred to as flicker. 
+
+There are many causes of flicker, including–but not limited to–auto camera settings, the type of lens used, high aperture settings, fast shutter speeds, Av stepping, Tv stepping, natural lighting changes, incandescent and fluorescent lighting, fluctuating electricity, clothing worn while animating, and the materials that are being photographed. 
+
+This article provides solutions for reducing flicker, both during shooting and in After Effects.
+
+manual fix in After Effects
+
+Here’s a fix based on advice given by Dave LaRonde. It takes time, but it’s a sure-fire way of fixing every frame.
+
+1. Go through the footage frame by frame. Find the first flicker frame.
+ 2. Duplicate the layer, and on the duplicate, find an adjacent frame with no flicker.
+ 3. Make the duplicate 1 frame long, put it above the original layer, and move it in time to cover the flicker frame.
+ 4. On the first layer, create a feathered mask around the area(s) that received the flicker in the bad layer. If the shot moves, reposition as necessary.
+ 5.Repeat the steps above until you’re done.
+
+using Color Correction effects built into After Effects
+
+Depending on the shot, you may be able to use Color Stabilizer effect, but if the camera is moving or there’s a bunch of movement in the scene, the Black Point and White Point will change and you’ll have to animate it using keyframes. The effect works by setting points on the screen that you wish to stabilize. Setting the sample area to sample more pixels will help. Then keyframe the positions of the sample points based on the movement in the scene. The idea is to pick the most stable regions in the shot.
+
+Use a combination of Auto Color, Auto Levels, and/or Auto Contrast from the Color Correction effects category. Start off with Auto Levels. If that doesn’t work, try Auto Color and Auto Contrast.
+
+third-party plug-ins for After Effects
+The Granite Bay Software GBDeflicker plug-in has been known to work wonders. Granite Bay provides some additional tips for avoiding or reducing flicker on their website. 
+The GenArts Sapphire DeFlicker plug-in will stabilize luminance changes, but only if they’re on an isolated area of the screen. The rest of the image will create a reverse flicker, which you have to isolate with either a mask or matte.
+The RE:VisionFX DE:Noise plug-in does a wonderful job with shots in which the flicker is not uniform across the entire frame. For example, it can be used when fluorescent bulbs are out of phase with the camera. It can also be used for time-lapses in which the black and white points don’t vary that much within the image.
+A combination of RE:VisionFX ReelSmart Motion Blur and Smoothkit can also help with “strobing” caused by a lack of time samples.
+Jim Tierney of Digital Anarchy has this to say about their Flicker Free plug-in: “Digital Anarchy’s Flicker Free is a cost-effective plug-in originally designed for removing flicker from time-lapse sequences, but it is also very effective at deflickering camera/light synchronization problems (rolling bands), drone propeller flicker, and slow motion. Presets are available for most types of flicker, making it easy to use and it works in both After Effects and Premiere Pro.”
+
+camera settings
+
+Make sure that all auto settings on the camera body and lens are turned off and set to manual. Any auto settings, such as auto-exposure, auto white balance, and light optimizer will usually cause luminance variations from shot to shot.
+
+Use a slower shutter speed. Fast shutter speeds are also a common cause of flicker. For example, DSLRs cannot really be consistent from frame to frame when shooting at extremely fast shutter speeds. Instead, use an ND filter to compensate and keep the exposures to 1/30th of a second or greater.
+
+For time-lapse photography, use a constant Av value and a bulb exposure if possible. This will help to prevent Av-stepping or Tv-stepping, which is a 1/3-stop jump in the iris or shutter speed that often happens while shooting from sunrise to sunset during an Auto Ramp time-lapse. Since bulb exposure times can be set with a precision of 1/1000 of a second, it’s possible to produce more gradual changes and reduce flicker.
+
+Using auto-focus will not cause flicker, but it will most likely cause differences in the focal plane depending on the depth of field and movement within the shot, resulting in a different and potentially more severe problem. For stop-motion animation, it’s especially important to control the focus manually.
+
+the lens
+
+More often than not, the camera lens is what causes stop-motion flicker. Most modern lenses communicate with the camera body to assist the photographer in setting focus and exposure. Stop-motion flicker, often found in animation and time-lapse photography, usually occurs because the lens is wide open until the shutter or depth-of-field preview button is pressed. At this point, the lens stops down to take a picture or preview the depth of field. However, most modern digital cameras control the aperture of the lens from the camera body. And, since the camera controls the aperture mechanically, friction causes minute differences in the exact size of the aperture as the iris blades close each time a photograph is taken. Therefore, there’s a possibility for minor variations in luminance from shot to shot.
+
+It’s very important to know each of your lenses. For instance, a Canon 16-35 II probably shouldn’t be stopped down past f/5.6. At f/16, most 16-35s will flicker. But, a Canon 50mm f/1.2 might start to flicker at f/4, if the iris is dodgy. There are general guidelines about not stopping down too far, but each copy of each lens has its own limits.
+
+Any lens with a manual aperture ring should solve the problem, by keeping the iris blades in the same position for the entire duration of the stop-motion shot or time-lapse. Manual Nikon prime lenses (AKA fixed or hard lenses) with Canon EOS adapters have become the favorite of many stop-motion studios. However, the adapters vary in quality. In order to preserve the integrity of the lens and ensure its security on the camera body, it’s important to purchase a sturdy adapter that also focuses to infinity and allows manual aperture control. 
+
+Novoflex makes a very sturdy traditional adapter for Nikon G lenses to Canon EOS bodies, but they’re quite expensive.
+
+Leitax is another company that makes custom adapters for all kinds of lenses at a slightly more affordable price. These adapters come in kits that you have to manually attach to the back of your lens using a custom set of screws, but the upside is they’re incredibly strong. 
+
+If you’re not in the market for a manual aperture lens and/or an expensive adapter, you can trick the camera body into cutting the communication with your lens by putting a piece of masking tape over the contacts on the rear element of the lens. However, this will just keep the iris permanently wide open. If you want to lock the aperture at a more closed down f-stop, follow these steps:
+Set the aperture on the camera body using the digital controls.
+Press the depth-of-field preview button (usually below the lens on the front of the camera body) and un-mount the lens while holding the button.
+Cover the lens contacts with tape (any kind that’s thin and won’t leave a residue or gum up the contacts).
+Reattach the lens without accidentally peeling off the tape.
+
+The downside is these steps must be followed each time you want to change the aperture. The upside is that shooting stop-motion or creating a time-lapse usually takes quite a long time so the aperture won’t need to be changed quickly or very often.
+
+Another issue to be aware of is that once your lens ceases to communicate with the camera, it also ceases to communicate with any frame-grabbing or stop-motion software. If you use Dragon Frame or Dragon Stop Motion, you may have to adjust the “Exposure Preview Offset” setting in the Cinematography window to match the live view exposure to the final shot.
+
+Conversely, many people play footage back in their frame-grabbing software using the live feed, which uses an auto exposure adjustment. The live feed usually flickers, so footage should be checked using the high-quality files captured from the camera. Both Dragon Frame and Dragon Stop Motion have the ability to play back the high-quality frames within the program. But, in order to be absolutely sure that there’s no flicker, it’s usually a good idea to render out those high-quality files using a lossless codec and inspect the video at the correct frame rate and highest quality.
+
+electricity levels
+
+If you have a fixed aperture lens or you’ve taped off the electronic connections between the camera and lens, and you’re still getting flicker, then it’s possible that electricity fluctuations are affecting your lighting set up over the course of the shot or throughout the day. In this case, a variac transformer will work wonders. They can range from very expensive to very cheap. It all depends on how big your set up is, how many lights your using and how much control you want.
+
+lighting
+
+Make sure that all of the bulbs in your lights are functioning properly. Bulbs often pop when the lights are turned on, so it’s a good idea to test all of them before shooting each day and watch for any dimming issues. This is an especially good idea if you plan on using more lights for another setup later on in the day. Hot light bulbs used in Mole Richardson lights tend to dim before they’re about to blow. Sometimes, the bulbs themselves darken, so you can visually see if they need replacing. 
+
+LED light panels are also great for both stop-motion and time-lapse photography. It’s true that LEDs flicker, but the rate at which they flicker is usually imperceptible to the human eye. Non-rectified LEDs, such as cheap Christmas lights, flicker at 60Hz, which is more likely to be noticeable, whereas rectified LEDs flicker at 120Hz, which should be virtually unnoticeable. The upside to using rectified LEDs is that they’re 30-40% brighter than non-rectified LEDs. The downside is that they’re less efficient. However, LEDs are still more efficient than most other light sources on the market.
+
+If you’re using cheap fluorescents other than Kino Flos, or other non-flicker fluorescents, it’s a good idea to shoot at a very long exposure. Fluorescents constantly flicker, but usually a 1-2 second exposure should keep the images balanced. 
+
+Last, if you’re shooting in a studio, make sure that no light from outside–no matter how small–is polluting your shooting space. Also, make sure that all gels, screens, or other objects in front of the lights are tied down properly and not moving around due to airflow issues, such as a ceiling fan or a bouncing c-stand arm.
+
+clothing
+
+Wear dark clothing. Most stop-motion animators wear entirely black outfits while shooting to reduce the risk of light reflecting off their clothes. This may sound silly, but it’s actually a very common cause of stop-motion flicker. Also, black duvetyne is a highly opaque fabric commonly used in film studios for blocking and absorbing light.
+
+sets, objects, and puppets
+
+Know the limitations of the sets, objects, and puppets you’re shooting. Porous materials such as wood and foam are affected by moisture, and therefore they may expand or shrink depending on the weather and the time of day. This won’t necessarily cause flicker, but it can cause unwanted movement, which might be mistaken for flicker at first glance.
+
+Also, watch out for highly specular materials that might be lying around or hanging on the walls of the shooting space. Mirrors, metallic objects, or pieces of Mylar left by a previous animator may be the ultimate cause of unwanted flicker. 
+
+
+TAGGED AS:(c)adrian.orozco.jimenez.acosta.gamez(c)
+
+Results 1 - 5 of 5
+
+
+Soundbooth CS3 User Guide 
+video camera, clicks and pops from a wireless microphone, and other ... When 
+ the line swings up to a peak, it represents higher pressure; when the line ... A 
+ microphone converts the pressure waves of sound into voltage changes in a wire
+ : ...
+http://www.adobe.com/support/documentation/archived_content/en/soundbooth/cs3/soundbo..
+	-
+ reducing flicker for stop-motion animation and time-lapse photography 
+Jul 20, 2012 ... There are many causes of flicker, including–but not limited to–auto camera 
+ settings, the type of lens used, high aperture settings, fast shutter ...
+http://blogs.adobe.com/aftereffects/2012/07/reducing-flicker-for-stop-motion-animatio..
+	-62k
+ Best laptop for creative suite cs6? | Adobe Community 
+When purchased, it was their "top-o-the-line," with 3x 250GB SATA II's, nVidia 
+ GTX ... His model just posted the highest laptop score on the video editing ... (
+ 1920 x 1080); Wi-Fi® Wireless networking (802.11b/g/n)+ Bluetooth 4.0 ... 
+ sometimes only EXPENSIVE lower voltage sticks HAVE to be used AND ...
+https://forums.adobe.com/thread/1037438?start=0&tstart=0
+ -246k
+ ISP List 
+antariksh broadband and wireless solution private limited ..... asia pacific 
+ broadband fixed lines co. ltd. asia pacific broadband ...... high-voltage union-
+ ukraine ltd.
+https://marketing.adobe.com/resources/help/en_US/aam/downloads/d_isp.pdf
+ Creative Cloud for teams | Adobe Creative Cloud for business 
+Control of users' access to services, ✓œ“. Customer Support, Basic: Phone, email
+ , chat, forums, Advanced: 24/7 tech support (with dedicated phone line), email, ...
+http://www.adobe.com/creativecloud/business/teams.html
+ -150k
+
+Results 1 - 10 of 10
+
+
+Need advice on graffics card upgrade for use of... | Adobe Community 
+The Studio XPS 9100 is 19.4 inches high by 7.8 inches wide by 20.7 inches deep
+ . It weighs about 40 pounds. A 525-watt power supply powers ...
+https://forums.adobe.com/thread/1013949?tstart=0
+ -131k
+ Editing 4k Desktop | Adobe Community 
+Hi, I just got a GH4, and I am looking for a desktop powerful enough to edit ... 
+Wireless, No ... You will need a better project disk, a top of the line SSD is three ... 
+watt quality power supply, and I would suggest 850 watt minimum.
+https://forums.adobe.com/thread/1644143?start=0&tstart=0
+ -138k
+ Error Message Server Busy During Startup | Adobe Community 
+Changing my power settings to never turn off hard drives fixed the problem. ... as 
+ Adobe software ...that his 400 watt power supply was inadequate to run ... My ISP 
+ is Plusnet (owned by BT) and I am on an unlimited high speed ...
+https://forums.adobe.com/thread/1527383?tstart=0
+ -289k
+ Laptop suitability question | Adobe Community 
+I may have a line on a MSI GT70 2OC-059us. .... but something else I have read 
+ that helps with "high power" (meaning high heat) laptops is .... Forget the AC 
+ outlet on the plane...they are mostly limited to 75 watts. ... 128GB SSD, 1TB 
+ 7500RPM HDD, 24GB DDR3 1600mhz memory, Killer Wireless-N, USB ...
+https://forums.adobe.com/thread/1281294?start=0&tstart=0
+ -153k
+ Best laptop for creative suite cs6? | Adobe Community 
+When purchased, it was their "top-o-the-line," with 3x 250GB SATA ... His model 
+ just posted the highest laptop score on the video editing ... x 1080); Wi-Fi® 
+Wireless networking (802.11b/g/n)+ Bluetooth 4.0 .... At that time (on another 
+ laptop that the power adapter for that particular model was only 120 watts ...
+https://forums.adobe.com/thread/1037438?start=0&tstart=0
+ -246k
+ JD on EP: Web tech Archives 
+Apr 6, 2008 ... It's the high-performance ActionScript 3 engine in Adobe Flash ...... Jonathan Watt 
+ also offers SVG authoring guidelines to make pages more renderer-independent. 
+ ...... Broadband powerlines: AT&T and Pacfic Gas & Electric are running trials ... 
+ where it turns into wireless signal repeaters on each lamppost.
+http://blogs.adobe.com/jd1/archives/web-tech/
+ -748k
+ Reboots while watching flash movie.. Windows 7 ... | Adobe ... 
+There is no explanation of what Kernel-Power is except saying the system .... As 
+ you suggested the CPU temp may be too high, but that never ... I may swap out 
+ the 500 watt PS I have in the Vista Machine now and see if I ... I may still have a 
+ RAM compatibility issue or something, but the bottom line is turning ...
+https://forums.adobe.com/thread/567419?start=0&tstart=0
+ -267k
+ John Nack on Adobe : 2009 
+Dec 31, 2009 ... Speaking of high speeds, here's an interesting short read on “Rapatronic ... And 
+ Entourage would also keep everybody on the "To" line when replying to all. .... (
+ Love the “wireless ginko. ... Designing Minds – Ben Watts (Part 1) ... In the first of 
+ a two-part series, Ben discusses the power of photography and ...
+http://blogs.adobe.com/jnack/2009
+ iSCSI interface for video editing? | Adobe Community 
+Hi David, ... and my power supply is probably close to maxed out as well, so I'm ... 
+ 700 Watt PSU driving 8 SATA devices, GTX-285, i7-920 Processor, and 12 GB of 
+ Ram on a P6T6 WS Revolution motherboard with additional cards for wireless, 
+ USB, and Firewire ports. .... 6-9 months of high priced HDDs!
+https://forums.adobe.com/thread/924942?tstart=0
+ -131k
+ John Nack on Adobe : 2007 : January 
+Jan 31, 2007 ... I borrowed a Nikon D2hs and a Canon 1D Mk II to do the shots: high pixel ... I set 
+ it to manual mode at 1/64 power (I think; I did a lot of experimenting here to find ... 
+ is a testament to the sheer wattage of his brain" makes me think there's a .... base 
+ station can hook up to a hard drive to enable wireless backup, ...
+http://blogs.adobe.com/jnack/2007/01
+ +
+ 172k
+  NEVERENDINGCONTINUUM_1973(c)Adrian.orozco.jimenez.acosta.gamez(c)
+  
+
+
+
+
+
+ 
+  
+
